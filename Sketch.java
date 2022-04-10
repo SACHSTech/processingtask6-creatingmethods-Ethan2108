@@ -37,7 +37,7 @@ public class Sketch extends PApplet {
     house(200, 100, 200);
 
     // House 2 
-    house(50, intReturnValue(100, 200), 100);
+    house(returnOutput(25, 50, 400)+150, 200, 200);
     
   }
   /**
@@ -71,6 +71,44 @@ public class Sketch extends PApplet {
     stroke(255, 167, 0);
     fill(255, 255, 0);
     ellipse(intSunX, intSunY, intSunSize, intSunSize);
+  }
+
+  /**
+  * Depiction of a house at the coordinates and custom scaled
+  *
+  * @param intHouseX  The x coordinate of the house (default: 100)
+  * @param intHouseY  The y coordinate of the house (default: 50)
+  * @param intScale  The scale of the house (default: 400)
+  *
+  */
+  private void house(int intHouseX, int intHouseY, int intScale) 
+  {
+     // Base square for house
+    fill(255, 248, 220); // White
+    rect(intHouseX, intHouseY+(intScale/8), (intScale/2), (intScale/2));
+
+     // Triangle for roof
+    fill(170, 1, 20); // Red
+    triangle(intHouseX, intHouseY+(intScale/8), intHouseX+(intScale/4), intHouseY, intHouseX+(intScale/2), intHouseY+(intScale/8));
+
+     // Rectangle for door
+    fill(196, 164, 132); // Light brown
+    rect(intHouseX+(intScale/4), intHouseY+((intScale/4)+(intScale/8)), (intScale/8), (intScale/4));
+  }
+
+/**
+  * Return function for the x coordinate of the center of the house
+  *
+  * @param intHouseX  The x coordinate of the house (same as house() method)
+  * @param intHouseY  The y coordinate of the house (same as house() method)
+  * @param intScale  The scale of the house (same as house() method)
+  * @return Returns the center point of the house
+  *
+  */
+  private int returnOutput(int housex, int housey, int scale) 
+  {
+    return housex+(scale/4);
+  }
   
-  // define other methods down here.
+  
 }
