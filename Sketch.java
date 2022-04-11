@@ -19,7 +19,7 @@ public class Sketch extends PApplet {
     background(210, 255, 173);
 
     // Return statement to output center of the house
-    System.out.println("Center of the house 1 (x): " + returnOutput(25, 50, 400));
+    System.out.println("Center of the house 1 (x): " + houseReturnOutput(25, 50, 400));
   }
 
   /**
@@ -34,15 +34,15 @@ public class Sketch extends PApplet {
     sun(50, 60, 80);
 
     // House 1
-    house(150, 150, 200);
+    house(100, 50, 200);
 
     // House 2 
-    house(returnOutput(25, 50, 400)+150, 200, 200);
+    house(houseReturnOutput(25, 50, 400)+150, 200, 200);
     
   }
   /**
   * Draws a base rectangle for the grass on the drawing
-  * 
+  *
   * @param intGrassX x-coordinate for the grass
   * @param intGrassY y-coordinate for the grass
   * @param intGrassWidth width of grass
@@ -76,8 +76,8 @@ public class Sketch extends PApplet {
   /**
   * Depiction of a house at the coordinates and custom scaled
   *
-  * @param intHouseX  The x coordinate of the house (default: 100)
-  * @param intHouseY  The y coordinate of the house (default: 50)
+  * @param intHouseX  The x coordinate of the house 
+  * @param intHouseY  The y coordinate of the house 
   * @param intScale  The scale of the house (default: 400)
   *
   */
@@ -99,13 +99,13 @@ public class Sketch extends PApplet {
 /**
   * Return function for the x coordinate of the center of the house
   *
-  * @param intHouseX  The x coordinate of the house (same as house() method)
-  * @param intHouseY  The y coordinate of the house (same as house() method)
-  * @param intScale  The scale of the house (same as house() method)
+  * @param intHouseX  The x coordinate of the house 
+  * @param intHouseY  The y coordinate of the house 
+  * @param intScale  The scale of the house 
   * @return Returns the center point of the house
   *
   */
-  private int returnOutput(int housex, int housey, int scale) 
+  private int houseReturnOutput(int housex, int housey, int scale) 
   {
     return housex+(scale/4);
   }
