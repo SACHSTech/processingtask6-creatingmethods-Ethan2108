@@ -34,7 +34,7 @@ public class Sketch extends PApplet {
     sun(50, 60, 80);
 
     // House 1
-    house(200, 100, 200);
+    house(150, 150, 200);
 
     // House 2 
     house(returnOutput(25, 50, 400)+150, 200, 200);
@@ -84,11 +84,11 @@ public class Sketch extends PApplet {
   private void house(int intHouseX, int intHouseY, int intScale) 
   {
      // Base square for house
-    fill(255, 248, 220); // White
+    fill(255, 255, 255); // White
     rect(intHouseX, intHouseY+(intScale/8), (intScale/2), (intScale/2));
 
      // Triangle for roof
-    fill(170, 1, 20); // Red
+    fill(255, 77, 0); // Red
     triangle(intHouseX, intHouseY+(intScale/8), intHouseX+(intScale/4), intHouseY, intHouseX+(intScale/2), intHouseY+(intScale/8));
 
      // Rectangle for door
