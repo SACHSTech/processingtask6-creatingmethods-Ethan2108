@@ -16,7 +16,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
-    background(210, 255, 173);
+    background(3, 248, 252);
 
     // Return statement to output center of the house
     System.out.println("Center of the house 1 (x): " + houseReturnOutput(25, 50, 400));
@@ -92,7 +92,7 @@ public class Sketch extends PApplet {
     triangle(intHouseX, intHouseY+(intScale/8), intHouseX+(intScale/4), intHouseY, intHouseX+(intScale/2), intHouseY+(intScale/8));
 
      // Rectangle for door
-    fill(196, 164, 132); // Light brown
+    fill(168, 81, 0); // Brown
     rect(intHouseX+(intScale/4), intHouseY+((intScale/4)+(intScale/8)), (intScale/8), (intScale/4));
   }
 
