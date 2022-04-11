@@ -34,7 +34,7 @@ public class Sketch extends PApplet {
     sun(50, 60, 80);
 
     // House 1
-    house(100, 50, 200);
+    house(150, 100, 200);
 
     // House 2 
     house(houseReturnOutput(25, 50, 400)+150, 200, 200);
