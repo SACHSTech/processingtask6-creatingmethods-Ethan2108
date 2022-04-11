@@ -105,9 +105,9 @@ public class Sketch extends PApplet {
   * @return Returns the center point of the house
   *
   */
-  private int houseReturnOutput(int housex, int housey, int scale) 
+  private int houseReturnOutput(int HouseX, int HouseY, int Scale) 
   {
-    return housex+(scale/4);
+    return HouseX+(Scale/4);
   }
   
   
